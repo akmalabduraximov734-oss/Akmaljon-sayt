@@ -1365,6 +1365,7 @@
   });
 
 
+  const DATA_OK = (typeof MAVZULAR !== 'undefined' && typeof YILLAR !== 'undefined');
   const rp = document.getElementById('rp');
   const $ = id => document.getElementById(id);
   let openedByClick = false, savedY = 0;
@@ -1386,7 +1387,7 @@
     YILLAR.forEach(y => {
       const b = mk('button', 'rp-year' + (y === year ? ' active' : '') + (yearItems(m, y).length ? ' has' : ''));
       b.type = 'button'; b.appendChild(mk('i')); b.appendChild(document.createTextNode(y + " o'quv yili"));
-      b.addEventListener('click', () => { history.replaceState(null, '', '#hisobot/' + key + '/' + y); renderPage(key, y); });
+      b.addEventListener('click', () => { try{ history.replaceState(null, '', '#hisobot/' + key + '/' + y); }catch(e){} renderPage(key, y); });
       ys.appendChild(b);
     });
     $('rpH').textContent = year + " o'quv yili";
@@ -1419,15 +1420,15 @@
   }
   function closePage(){
     if(openedByClick){ openedByClick = false; history.back(); }
-    else { history.replaceState(null, '', location.pathname + location.search); hidePage(); }
+    else { try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){} hidePage(); }
   }
   document.querySelectorAll('.topic-card').forEach(c => c.addEventListener('click', () => {
+    if(!DATA_OK){ alert("hisobotlar.js fayli topilmadi. U index.html bilan bir papkada (GitHub'da asosiy papkada) turishi kerak."); return; }
     openedByClick = true; location.hash = '#hisobot/' + c.dataset.topic;
   }));
   $('rpBack').addEventListener('click', closePage);
   document.addEventListener('keydown', e => { if(e.key === 'Escape' && !rp.hidden) closePage(); });
-  window.addEventListener('hashchange', route);
-  route();
+  if(DATA_OK){ window.addEventListener('hashchange', route); route(); }
 
   const tabs = document.querySelectorAll('.cat-tab');
   const panels = document.querySelectorAll('.cat-panel');

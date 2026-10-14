@@ -28,13 +28,13 @@ const MAVZULAR = {
     "hisobotlar": {
      "2024-2025": [
         {
-          "2024-2025": "Birinchi prorektorning yillik rejasi ijrosi (2024-2025)",
+          "nom": "Birinchi prorektorning yillik rejasi ijrosi (2024-2025)",
           "pdf": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.pdf",
           "flipbook": "",
           "izoh": ""
         }
       ],
-       "2025-2026": [
+      "2025-2026": [
         {
           "nom": "Yillik reja ijrosi bo'yicha hisobot",
           "pdf": "yillik-reja-ijrosi-hisobot.pdf",
