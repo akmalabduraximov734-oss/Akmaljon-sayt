@@ -32,7 +32,13 @@ const MAVZULAR = {
           "pdf": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.pdf",
           "flipbook": "",
           "izoh": ""
-        }
+        },
+        {
+    "nom": "Birinchi prorektorning yillik rejasi (2024-2025)",
+    "pdf": "Birinchi_prorektorning_yillik_rejasi_2024-2025.pdf",
+    "flipbook": "",
+    "izoh": ""
+  }
       ],
       "2025-2026": [
         {
