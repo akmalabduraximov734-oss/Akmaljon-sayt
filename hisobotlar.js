@@ -50,7 +50,7 @@ const MAVZULAR = {
          {
           "nom": "Yillik reja ijrosi bo'yicha hisobot",
           "pdf": "yillik-reja-ijrosi-hisobot.pdf",
-          "flipbook": "",
+          "flipbook": "https://online.pubhtml5.com/ketlg/ybhl/",
           "izoh": "Sentabrdan maygacha oylar kesimida bajarilgan barcha tadbirlar, ularning tavsifi va manbalar havolalari bilan"
         }
       ]
