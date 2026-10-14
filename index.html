@@ -1371,7 +1371,7 @@
   let openedByClick = false, savedY = 0;
   const mk = (tag, cls, text) => { const el = document.createElement(tag); if(cls) el.className = cls; if(text) el.textContent = text; return el; };
   const btn = (href, label, alt) => { const a = mk('a', 'rp-btn' + (alt ? ' alt' : ''), label); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; };
-  const yearItems = (m, y) => (m.hisobotlar[y] || []).filter(r => r.pdf || r.flipbook);
+  const yearItems = (m, y) => (m.hisobotlar[y] || []).filter(r => r.pdf || r.flipbook || r.fotoalbom);
 
   function renderPage(key, year){
     const m = MAVZULAR[key];
@@ -1400,7 +1400,7 @@
       text.appendChild(mk('h4', '', r.nom || m.nom));
       if(r.izoh) text.appendChild(mk('p', '', r.izoh));
       if(r.pdf) act.appendChild(btn(encodeURI(r.pdf), "PDF ko'rish ↗"));
-      if(r.flipbook) act.appendChild(btn(r.flipbook, 'Flipbook ↗', true));
+      if(r.flipbook || r.fotoalbom) act.appendChild(btn(r.flipbook || r.fotoalbom, 'Fotoalbom ↗', true));
       row.appendChild(text); row.appendChild(act); list.appendChild(row);
     });
   }
