@@ -32,7 +32,8 @@ const MAVZULAR = {
           "pdf": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2023-2024.pdf",
           "flipbook": "https://online.pubhtml5.com/ketlg/saey/",
           "izoh": ""
-        },
+        }
+        ],
        "2024-2025": [
         {
           "nom": "Birinchi prorektorning yillik rejasi ijrosi (2024-2025)",
