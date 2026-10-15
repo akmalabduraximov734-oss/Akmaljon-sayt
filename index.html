@@ -464,6 +464,7 @@
   .rp-title{ font-family:'Unbounded',sans-serif; font-size:clamp(1.3rem,3vw,2.1rem); line-height:1.2; margin-bottom:10px; }
   .rp-desc{ color:#6a6a70; max-width:70ch; line-height:1.6; }
   .rp-meta{ font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--indigo); margin:14px 0 28px; }
+  .rp-years[hidden]{ display:none; }
   .rp-years{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px; }
   .rp-year{ font-family:'JetBrains Mono',monospace; font-size:0.8rem; font-weight:700; padding:10px 16px; border-radius:999px; border:1.5px solid var(--ink); background:transparent; color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; gap:8px; }
   .rp-year i{ width:8px; height:8px; border-radius:50%; background:var(--line); }
@@ -1082,7 +1083,7 @@
             <h3>Ma'rifat ulashib loyihasi hisoboti</h3>
             <p>Loyiha doirasida amalga oshirilgan ishlar hisobotlari</p>
           </div>
-          <div class="annual-report-cta">O'quv yillari →</div>
+          <div class="annual-report-cta">Hisobotlar →</div>
         </button>
     </div>
   </div>
@@ -1374,29 +1375,10 @@
   const btn = (href, label, alt) => { const a = mk('a', 'rp-btn' + (alt ? ' alt' : ''), label); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; };
   const yearItems = (m, y) => (m.hisobotlar[y] || []).filter(r => r.pdf || r.word || r.flipbook || r.fotoalbom);
 
-  function renderPage(key, year){
-    const m = MAVZULAR[key];
-    if(!year || !YILLAR.includes(year)){
-      year = [...YILLAR].reverse().find(y => yearItems(m, y).length) || YILLAR[YILLAR.length - 1];
-    }
-    const filled = YILLAR.filter(y => yearItems(m, y).length).length;
-    $('rpTitle').textContent = m.nom;
-    $('rpDesc').textContent = m.tavsif;
-    $('rpCrumb').textContent = "Hisobotlar / " + m.nom;
-    $('rpMeta').textContent = filled + " / " + YILLAR.length + " o'quv yili hisobotlari yuklangan";
-    const ys = $('rpYears'); ys.innerHTML = '';
-    YILLAR.forEach(y => {
-      const b = mk('button', 'rp-year' + (y === year ? ' active' : '') + (yearItems(m, y).length ? ' has' : ''));
-      b.type = 'button'; b.appendChild(mk('i')); b.appendChild(document.createTextNode(y + " o'quv yili"));
-      b.addEventListener('click', () => { try{ history.replaceState(null, '', '#hisobot/' + key + '/' + y); }catch(e){} renderPage(key, y); });
-      ys.appendChild(b);
-    });
-    $('rpH').textContent = year + " o'quv yili";
-    const list = $('rpList'); list.innerHTML = '';
-    const items = yearItems(m, year);
-    if(!items.length){
-      list.appendChild(mk('div', 'rp-empty', year + " o'quv yili hisoboti tez orada joylanadi."));
-    } else items.forEach(r => {
+  function fillList(list, items, emptyText, m){
+    list.innerHTML = '';
+    if(!items.length){ list.appendChild(mk('div', 'rp-empty', emptyText)); return; }
+    items.forEach(r => {
       const row = mk('div', 'rp-item'), text = mk('div', 'rp-item-text'), act = mk('div', 'rp-actions');
       text.appendChild(mk('h4', '', r.nom || m.nom));
       if(r.izoh) text.appendChild(mk('p', '', r.izoh));
@@ -1405,6 +1387,39 @@
       if(r.flipbook || r.fotoalbom) act.appendChild(btn(r.flipbook || r.fotoalbom, 'Fotoalbom ↗', true));
       row.appendChild(text); row.appendChild(act); list.appendChild(row);
     });
+  }
+  const isReady = r => r.pdf || r.word || r.flipbook || r.fotoalbom;
+
+  function renderPage(key, year){
+    const m = MAVZULAR[key];
+    $('rpTitle').textContent = m.nom;
+    $('rpDesc').textContent = m.tavsif;
+    $('rpCrumb').textContent = "Hisobotlar / " + m.nom;
+    const ys = $('rpYears');
+    /* Oddiy ro'yxat rejimi: mavzuda "royxat" bo'lsa, yillarsiz, ixtiyoriy nomli hisobotlar chiqadi */
+    if(Array.isArray(m.royxat)){
+      const items = m.royxat.filter(isReady);
+      ys.innerHTML = ''; ys.hidden = true;
+      $('rpMeta').textContent = items.length + " ta hisobot joylangan";
+      $('rpH').textContent = "Hisobotlar";
+      fillList($('rpList'), items, "Hisobotlar tez orada joylanadi.", m);
+      return;
+    }
+    ys.hidden = false;
+    if(!year || !YILLAR.includes(year)){
+      year = [...YILLAR].reverse().find(y => yearItems(m, y).length) || YILLAR[YILLAR.length - 1];
+    }
+    const filled = YILLAR.filter(y => yearItems(m, y).length).length;
+    $('rpMeta').textContent = filled + " / " + YILLAR.length + " o'quv yili hisobotlari yuklangan";
+    ys.innerHTML = '';
+    YILLAR.forEach(y => {
+      const b = mk('button', 'rp-year' + (y === year ? ' active' : '') + (yearItems(m, y).length ? ' has' : ''));
+      b.type = 'button'; b.appendChild(mk('i')); b.appendChild(document.createTextNode(y + " o'quv yili"));
+      b.addEventListener('click', () => { try{ history.replaceState(null, '', '#hisobot/' + key + '/' + y); }catch(e){} renderPage(key, y); });
+      ys.appendChild(b);
+    });
+    $('rpH').textContent = year + " o'quv yili";
+    fillList($('rpList'), yearItems(m, year), year + " o'quv yili hisoboti tez orada joylanadi.", m);
   }
   function showPage(key, year){
     if(rp.hidden){ savedY = window.scrollY; document.body.style.overflow = 'hidden'; }
