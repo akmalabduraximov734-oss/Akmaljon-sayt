@@ -82,7 +82,20 @@ const MAVZULAR = {
     "nom": "Ma'naviy-ma'rifiy ishlar yuzasidan umumiy hisobot",
     "tavsif": "Ma'naviy-ma'rifiy ishlar bo'yicha umumlashtirilgan hisobotlar — o'quv yillari kesimida",
     "hisobotlar": {
-      "2025-2026": [
+      "2024-2025": [
+        {
+          "nom": "Ma'naviy-ma'rifiy_ishlar_yuzasidan__hisobot_2024-2025-o'quv_yili",
+          "pdf": "Ma'naviy-ma'rifiy_ishlar_yuzasidan__hisobot_2024-2025-o'quv_yili.pdf",
+          "flipbook": "https://online.pubhtml5.com/ketlg/rqau/",
+          "izoh": ""
+        },
+         {
+          "nom": "Planshet_Ma'naviy-ma'rifiy_ishlar_yuzasidan__hisobot_2024-2025-o'quv_yili",
+          "pdf": "Planshet_Ma'naviy-ma'rifiy_ishlar_yuzasidan__hisobot_2024-2025-o'quv_yili.pdf",
+          "flipbook": "",
+          "izoh": ""
+        },
+       "2025-2026": [
         {
           "nom": "Umumiy hisobot",
           "pdf": "manaviy-marifiy-umumiy-hisobot.pdf",
