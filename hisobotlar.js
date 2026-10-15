@@ -122,7 +122,15 @@ const MAVZULAR = {
     "nom": "Ma'naviy-ma'rifiy, madaniy tadbirlar hisoboti",
     "tavsif": "Konsertlar, teatr, ochiq eshiklar kuni va kino kechalari bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+       "2024-2025": [
+        {
+          "nom": "Ma'naviy-ma'rifiy_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Ma'naviy-ma'rifiy_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Ma'naviy-ma'rifiy, madaniy tadbirlar hisoboti",
           "pdf": "01-ma'naviy-ma'rifiy, madaniy.pdf",
@@ -141,7 +149,15 @@ const MAVZULAR = {
     "nom": "Sport musobaqalari hisoboti",
     "tavsif": "Institut va viloyat miqyosidagi sport musobaqalari bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+       "2024-2025": [
+        {
+          "nom": "Sport_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Sport_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Sport musobaqalari hisoboti",
           "pdf": "02-sport.pdf",
@@ -155,7 +171,15 @@ const MAVZULAR = {
     "nom": "Davra suhbatlari va uchrashuvlar hisoboti",
     "tavsif": "Turli mavzudagi uchrashuvlar va davra suhbatlari bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+     "2024-2025": [
+        {
+          "nom": "Davra_suhbati_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Davra_suhbati_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Davra suhbatlari va uchrashuvlar hisoboti",
           "pdf": "03-davra suhbatlari va uchrashuv.pdf",
@@ -169,7 +193,15 @@ const MAVZULAR = {
     "nom": "Intellektual o'yin va tanlovlar hisoboti",
     "tavsif": "Intellektual o'yinlar, viktorinalar va tanlovlar bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+      "2024-2025": [
+        {
+          "nom": "Intellektual_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Intellektual_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Intellektual o'yin va tanlovlar hisoboti",
           "pdf": "04-Intellektual o'yin va tanlovlar.pdf",
@@ -188,7 +220,15 @@ const MAVZULAR = {
     "nom": "Profilaktik suhbatlar hisoboti",
     "tavsif": "Soha mutaxassislari ishtirokidagi profilaktik suhbatlar bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+      "2024-2025": [
+        {
+          "nom": "Profilaktika_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Profilaktika_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Profilaktik suhbatlar hisoboti",
           "pdf": "05-profilaktik suhbatlar.pdf",
@@ -212,7 +252,15 @@ const MAVZULAR = {
     "nom": "Psixologik tadbirlar hisoboti",
     "tavsif": "Talabalar bilan olib borilgan psixologik treninglar va tadbirlar bo'yicha hisobotlar",
     "hisobotlar": {
-      "2025-2026": [
+      "2024-2025": [
+        {
+          "nom": "Psixologik_2024-2024-o'quv_yili_raqamli_hisobot",
+          "pdf": "Psixologik_2024-2024-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        }
+          ],
+       "2025-2026": [
         {
           "nom": "Psixologik tadbirlar hisoboti",
           "pdf": "06-psixologik.pdf",
