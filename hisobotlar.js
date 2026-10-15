@@ -26,7 +26,16 @@ const MAVZULAR = {
     "nom": "Birinchi prorektorning yillik rejasi ijrosi",
     "tavsif": "Sentabrdan maygacha oylar kesimida bajarilgan tadbirlar bo'yicha hisobotlar — o'quv yillari kesimida",
     "hisobotlar": {
-        "2024-2025": [
+       "2023-2024": [
+    {
+      "nom": "Hisobot nomi (2023-2024)",
+      "pdf": "fayl-nomi-2023-2024.pdf",
+      "word": "",
+      "fotoalbom": "",
+      "izoh": ""
+    }
+  ], 
+       "2024-2025": [
         {
           "nom": "Birinchi prorektorning yillik rejasi ijrosi (2024-2025)",
           "pdf": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.pdf",
