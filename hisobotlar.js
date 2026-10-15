@@ -313,4 +313,7 @@ const MAVZULAR = {
         "word": "",
         "fotoalbom": "",
         "izoh": ""
-         };
+        }
+    ]
+  }
+};
