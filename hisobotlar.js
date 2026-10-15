@@ -33,7 +33,13 @@ const MAVZULAR = {
       "word": "",
       "fotoalbom": "https://online.pubhtml5.com/ketlg/saey/",
       "izoh": ""
-    }
+    },
+          {
+    "nom": "Birinchi prorektorning yillik rejasi (2023-2024)",
+    "pdf": "Birinchi_prorektorning_yillik_rejasi_2023-2024.pdf",
+    "flipbook": "",
+    "izoh": ""
+  }
   ], 
        "2024-2025": [
         {
