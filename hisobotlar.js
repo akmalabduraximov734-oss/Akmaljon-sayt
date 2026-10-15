@@ -94,7 +94,8 @@ const MAVZULAR = {
           "pdf": "Planshet_Ma'naviy-ma'rifiy_ishlar_yuzasidan__hisobot_2024-2025-o'quv_yili.pdf",
           "flipbook": "",
           "izoh": ""
-        },
+        }
+         ],
        "2025-2026": [
         {
           "nom": "Umumiy hisobot",
