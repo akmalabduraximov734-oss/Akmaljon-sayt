@@ -36,7 +36,7 @@ const MAVZULAR = {
         {
   "nom": "Birinchi prorektorning yillik rejasi ijrosi (2024-2025)",
   "pdf": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.pdf",
-  "word": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.docx",
+  "word": "Birinchi_prorektorning_yillik_rejasi_ijrosi_2024-2025.doc",
   "fotoalbom": "",
   "izoh": ""
 },
