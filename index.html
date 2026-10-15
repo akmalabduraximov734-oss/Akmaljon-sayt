@@ -478,6 +478,7 @@
   .rp-actions{ display:flex; flex-wrap:wrap; gap:8px; }
   .rp-btn{ font-family:'JetBrains Mono',monospace; font-size:0.78rem; font-weight:700; text-decoration:none; background:var(--amber); color:var(--ink); padding:9px 16px; border-radius:999px; white-space:nowrap; }
   .rp-btn.alt{ background:var(--indigo); color:var(--paper); }
+  .rp-btn.word{ background:transparent; border:1.5px solid var(--ink); color:var(--ink); }
   .rp-empty{ border:1.5px dashed var(--line); border-radius:16px; padding:32px 22px; color:#6a6a70; text-align:center; line-height:1.6; }
   @media(max-width:760px){
     .rp-bar-in,.rp-body{ padding-left:18px; padding-right:18px; }
@@ -1371,7 +1372,7 @@
   let openedByClick = false, savedY = 0;
   const mk = (tag, cls, text) => { const el = document.createElement(tag); if(cls) el.className = cls; if(text) el.textContent = text; return el; };
   const btn = (href, label, alt) => { const a = mk('a', 'rp-btn' + (alt ? ' alt' : ''), label); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; };
-  const yearItems = (m, y) => (m.hisobotlar[y] || []).filter(r => r.pdf || r.flipbook || r.fotoalbom);
+  const yearItems = (m, y) => (m.hisobotlar[y] || []).filter(r => r.pdf || r.word || r.flipbook || r.fotoalbom);
 
   function renderPage(key, year){
     const m = MAVZULAR[key];
@@ -1400,6 +1401,7 @@
       text.appendChild(mk('h4', '', r.nom || m.nom));
       if(r.izoh) text.appendChild(mk('p', '', r.izoh));
       if(r.pdf) act.appendChild(btn(encodeURI(r.pdf), "PDF ko'rish ↗"));
+      if(r.word){ const w = btn(encodeURI(r.word), "Word yuklab olish ⬇", false); w.setAttribute('download', ''); w.classList.add('word'); act.appendChild(w); }
       if(r.flipbook || r.fotoalbom) act.appendChild(btn(r.flipbook || r.fotoalbom, 'Fotoalbom ↗', true));
       row.appendChild(text); row.appendChild(act); list.appendChild(row);
     });
