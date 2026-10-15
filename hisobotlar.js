@@ -102,7 +102,19 @@ const MAVZULAR = {
           "pdf": "manaviy-marifiy-umumiy-hisobot.pdf",
           "flipbook": "https://online.pubhtml5.com/ketlg/ybhl/",
           "izoh": "962 ta tadbir, respublika musobaqalaridagi natijalar va tanlovlardagi g'alabalar bo'yicha to'liq hisobot"
-        }
+        },
+          {
+          "nom": "2025-2026-o'quv_yili_raqamli_hisobot",
+          "pdf": "2025-2026-o'quv_yili_raqamli_hisobot.pdf",
+          "flipbook": "",
+          "izoh": ""
+        },
+         {
+          "nom": "Planshet_2025-2026-o'quv yili hisoboti",
+          "pdf": "Planshet_2025-2026-o'quv_yili_hisoboti.pdf",
+          "flipbook": "",
+          "izoh": ""
+        } 
       ]
     }
   },
