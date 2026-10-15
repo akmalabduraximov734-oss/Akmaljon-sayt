@@ -278,6 +278,39 @@ const MAVZULAR = {
   "marifat": {
     "nom": "Ma'rifat ulashib loyihasi hisoboti",
     "tavsif": "Loyiha doirasida amalga oshirilgan ishlar hisobotlari",
-    "hisobotlar": {}
-  }
-};
+    "royxat": [
+      {
+        "nom": "2024-yil_aprel_Ma'rifat_ulashib",
+        "pdf": "2024-yil_aprel_Ma'rifat_ulashib.pdf",
+        "word": "",
+        "fotoalbom": "",
+        "izoh": ""
+      },
+      {
+        "nom": "2024-yil_oktabr_Ma'rifat_ulashib",
+        "pdf": "2024-yil_oktabr_Ma'rifat_ulashib.pdf",
+        "word": "",
+        "fotoalbom": "",
+        "izoh": ""
+         },
+       {
+        "nom": "2024-yil_dekabr_Ma'rifat_ulashib",
+        "pdf": "2024-yil_dekabr_Ma'rifat_ulashib.pdf",
+        "word": "",
+        "fotoalbom": "",
+        "izoh": ""
+         },
+       {
+        "nom": "2025-yil_oktabr_Ma'rifat_ulashib",
+        "pdf": "2025-yil_oktabr_Ma'rifat_ulashib.pdf",
+        "word": "",
+        "fotoalbom": "",
+        "izoh": ""
+         },
+       {
+        "nom": "2026-yil_oktabr_Ma'rifat_ulashib",
+        "pdf": "2026-yil_oktabr_Ma'rifat_ulashib.pdf",
+        "word": "",
+        "fotoalbom": "",
+        "izoh": ""
+         };
