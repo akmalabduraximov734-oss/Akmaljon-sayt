@@ -34,8 +34,8 @@ const XODIMLAR = [
   { "ism": "Soliyev Jamshidbek Nozimjon o'g'li", "lavozim": "Bo'lim uslubchisi", "telefon": "+998 90 210 21 13", "rasm": "images/soliyev-jamshidbek.jpg" },
   { "ism": "Shavkatova Muzifa Shodibek qizi", "lavozim": "Kotiba", "telefon": "+998 93 736 64 66", "rasm": "images/shavkatova-muzifa.jpg" },
   { "ism": "Qodirov Bahodir Odiljonovich", "lavozim": "Profilaktika inspektori (podpolkovnik)", "telefon": "+998 91 476 66 34", "rasm": "images/qodirov-bahodir.jpg" },
-  { "ism": "Qurbonova Mohidil", "lavozim": "Xotin-qizlar masalalari bo'yicha Profilaktika inspektori (mayor)", "telefon": "+998 99 353 20 43", "rasm": "images/M.Qurbonova.jpg" },
-  { "ism": "Ismoilova Mahliyo Sobirjonovna", "lavozim": "Institut psixologi", "telefon": "+998 91 495 67 29", "rasm": "images/M.Ismoilova.jpg" },
+  { "ism": "Qurbonova Mohidil", "lavozim": "Xotin-qizlar masalalari bo'yicha Profilaktika inspektori (mayor)", "telefon": "+998 99 353 20 43", "rasm": "images/mohidil-qurbonova.jpg" },
+  { "ism": "Ismoilova Mahliyo Sobirjonovna", "lavozim": "Institut psixologi", "telefon": "+998 91 495 67 29", "rasm": "images/mahliyo-ismoilova.jpg" },
   { "ism": "G'aniyeva Gulandon Ibragimovna", "lavozim": "Institut psixologi, xotin-qizlar masalalari yuzasidan rektor maslahatchisi", "telefon": "+998 90 210 70 16", "rasm": "images/ganiyeva-gulandon.jpg" }
 ];
 
