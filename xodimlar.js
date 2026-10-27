@@ -45,15 +45,15 @@ const FAKULTETLAR = [
   {
     "nom": "Ijtimoiy va amaliy fanlar fakulteti",
     "rang": "indigo",
-    "dekan": { "ism": "To'rayev Axrorbek Tojdinovich", "telefon": "+998 94 563 70 01", "rasm": "images/torayev-axrorbek.jpg" },
+    "dekan": { "ism": "Abdukarimov Jaxongir Maxammadjon o‘g‘li", "telefon": "+998 91 499 24 24", "rasm": "images/jahongirshox-karimov.jpg" },
     "telegram": "https://t.me/Ijtimoiy_fanlarsana",
     "tyutorlar": [
       { "ism": "Xasanov Anvarjon Ravshanbek o'g'li", "telefon": "+998 91 490 43 43" },
       { "ism": "Orifjonov Xusanboy Sohibjon o'g'li", "telefon": "+998 90 545 66 90" },
-      { "ism": "Abdukarimov Jaxongir Mahammadjon o'g'li", "telefon": "+998 99 533 07 00" },
+      { "ism": "Rsutamov G'ulomqodir Alijon o'g'li", "telefon": "+998 50 709 51 51" },
       { "ism": "Mannabov Muhammadrasul Abdumalikovich", "telefon": "+998 90 259 91 17" },
-      { "ism": "Abduraxmonova Madinaxon G'olibjon qizi", "telefon": "+998 91 617 12 93" },
-      { "ism": "Saidov Boburjon Sobirjon o'g'li", "telefon": "+998 99 117 17 93" },
+      { "ism": "Akmaljonov Akbarjon Akmaljon o'g'li", "telefon": "+998 95 164 34 56" },
+      { "ism": "Adxamova Oltinoy Rafiqjon qizi", "telefon": "" },
       { "ism": "Ergashev Shoxruxbek Fayzullo o'g'li", "telefon": "+998 91 289 68 66" },
       { "ism": "Sotvoldiyev Jamshidbek Olimovich", "telefon": "+998 88 998 77 76" },
       { "ism": "Qodirov Baxromjon Odiljonovich", "telefon": "+998 77 387 55 57" }
@@ -68,7 +68,7 @@ const FAKULTETLAR = [
       { "ism": "Badalova Mavjuda Zokirjonovna", "telefon": "+998 91 489 60 94" },
       { "ism": "Xakimov Yodgorbek Qo'chqorbek o'g'li", "telefon": "+998 88 999 00 54" },
       { "ism": "Yuldasheva Mohinur Shavkatbek qizi", "telefon": "+998 93 443 86 86" },
-      { "ism": "Mamadinov Odilbek Mashrabjonovich", "telefon": "+998 88 837 37 01" },
+      { "ism": "Vahobjonov Bekzodbek Dilmurodjon o'g'li", "telefon": "+998 93 789 57 58" },
       { "ism": "Raxmonova Ozoda Abduvosiyevna", "telefon": "+998 94 836 33 77" },
       { "ism": "Raximov G'olibjon Yoqubjonovich", "telefon": "+998 97 232 84 82" },
       { "ism": "Nurmatov Murodjon Azimjon o'g'li", "telefon": "+998 95 322 90 90" },
@@ -90,6 +90,7 @@ const FAKULTETLAR = [
       { "ism": "Orifjonova Nargizaxon Ma'ripovna", "telefon": "+998 77 067 66 90" },
       { "ism": "Azimov Azizbek Azamjon o'g'li", "telefon": "+998 93 312 45 55" },
       { "ism": "Habibullayev Muhammadsodiq Mahmudjon o'g'li", "telefon": "+998 93 549 47 00" },
+      { "ism": "Nizomova Oygul Avazbek qizi", "telefon": "+998 94 432 55 77" },
       { "ism": "Sobirova Jumagul Erkinovna", "telefon": "+998 97 973 73 93" }
     ]
   },
@@ -99,7 +100,6 @@ const FAKULTETLAR = [
     "dekan": { "ism": "Karimov Ulug'bek Dilmurodjonovich", "telefon": "+998 93 440 42 42", "rasm": "images/karimov-ulugbek.jpg" },
     "telegram": "https://t.me/adpipedagogikafakulteti",
     "tyutorlar": [
-      { "ism": "Xoldarova Nigora Kamilovna", "telefon": "+998 88 831 06 66" },
       { "ism": "Bozorboyeva Mohira Shavkatbek qizi", "telefon": "+998 99 027 31 96" },
       { "ism": "Qayumov Abrorbek Ravshanbek o'g'li", "telefon": "+998 90 201 27 27" },
       { "ism": "Mamadaliyeva Shahnoza Muladalimovna", "telefon": "+998 90 621 29 44" },
