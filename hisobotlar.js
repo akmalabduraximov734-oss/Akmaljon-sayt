@@ -85,7 +85,7 @@ const MAVZULAR = {
   },
          {
           "nom": "Yillik reja ijrosi bo'yicha hisobot",
-          "pdf": "yillik-reja-ijrosi-hisobot_sentabr_oktabr.pdf",
+          "pdf": "Yillik_reja_ijrosi_bo'yicha_hisobot_sentabr_oktabr.pdf",
           "flipbook": "https://online.pubhtml5.com/ketlg/czpl/",
           "izoh": ""
         }
