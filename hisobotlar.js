@@ -75,6 +75,20 @@ const MAVZULAR = {
           "flipbook": "https://online.pubhtml5.com/ketlg/ybhl/",
           "izoh": "Sentabrdan maygacha oylar kesimida bajarilgan barcha tadbirlar, ularning tavsifi va manbalar havolalari bilan"
         }
+      ],
+        "2026-2027": [
+        {
+    "nom": "Birinchi prorektorning yillik rejasi (2026-2027)",
+    "pdf": "Birinchi_prorektorning_yillik_rejasi_2026-2027.pdf",
+    "flipbook": "",
+    "izoh": ""
+  },
+         {
+          "nom": "Yillik reja ijrosi bo'yicha hisobot",
+          "pdf": "yillik-reja-ijrosi-hisobot.pdf",
+          "flipbook": "https://online.pubhtml5.com/ketlg/czpl/",
+          "izoh": ""
+        }
       ]
     }
   },
